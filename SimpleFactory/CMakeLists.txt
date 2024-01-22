@@ -7,8 +7,8 @@ INCLUDE_DIRECTORIES(Inc)
 
 FILE(GLOB SOURCE_FILES Src/*.cpp)
 
-foreach (source_file ${SOURCE_FILES})
-    set_source_files_properties(${source_file} PROPERTIES COMPILE_FLAGS "-save-temps")
-endforeach ()
+#foreach (source_file ${SOURCE_FILES})
+#    set_source_files_properties(${source_file} PROPERTIES COMPILE_FLAGS "-save-temps")
+#endforeach ()
 
 add_executable(SimpleFactory ${SOURCE_FILES})

@@ -1,0 +1,10 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.24)
+project(Singleton)
+
+set(CMAKE_CXX_STANDARD 17)
+
+INCLUDE_DIRECTORIES(Inc)
+
+FILE(GLOB SOURCE_FILES Src/*.cpp)
+
+add_executable(Singleton ${SOURCE_FILES})
